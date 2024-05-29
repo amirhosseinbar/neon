@@ -1,0 +1,350 @@
+@font-face {
+  font-family: anjoman-bold;
+  src: url(../assets/fonts/AnjomanFaNum-Bold.ttf);
+}
+@font-face {
+  font-family: anjoman-light;
+  src: url(../assets/fonts/AnjomanFaNum-Light.ttf);
+}
+@font-face {
+  font-family: anjoman-regular;
+  src: url(../assets/fonts/AnjomanFaNum-Regular.ttf);
+}
+
+/* customize fonts */
+
+@font-face {
+  font-family: Architex;
+  src: url(../assets/fonts/Architex.ttf);
+}
+@font-face {
+  font-family: BadScript;
+  src: url(../assets/fonts/BadScript-Regular.ttf);
+}
+@font-face {
+  font-family: Barokah;
+  src: url(../assets/fonts/Barokah.ttf);
+}
+@font-face {
+  font-family: Bettina;
+  src: url(../assets/fonts/Bettina.ttf);
+}
+@font-face {
+  font-family: Caveat-Regular;
+  src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: fabfeltscript-bold;
+  src: url(../assets/fonts/fabfeltscript-bold.ttf);
+}
+@font-face {
+  font-family: HighSummit;
+  src: url(../assets/fonts/HighSummit.ttf);
+}
+@font-face {
+  font-family: Sacramento;
+  src: url(../assets/fonts/Sacramento-Regular.ttf);
+}
+@font-face {
+  font-family: Nickainley;
+  src: url(../assets/fonts/Nickainley.ttf);
+}
+@font-face {
+  font-family: Somelove;
+  src: url(../assets/fonts/Somelove.otf);
+}
+@font-face {
+  font-family: SouthTown;
+  src: url(../assets/fonts/SouthTown.otf);
+}
+@font-face {
+  font-family: Stalemate;
+  src: url(../assets/fonts/Stalemate-Regular.ttf);
+}
+@font-face {
+  font-family: SundayHoliday;
+  src: url(../assets/fonts/SundayHoliday.ttf);
+}
+@font-face {
+  font-family: TheSuavity;
+  src: url(../assets/fonts/TheSuavity.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: JosefinSans;
+  src: url(../assets/fonts/JosefinSans-Regular.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 182, 182);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dbdbdb;
+}
+
+body {
+  background-color: rgb(182, 182, 182) !important;
+  font-family: anjoman-regular !important;
+}
+h1 {
+  font-family: anjoman-bold;
+  font-size: 20px !important;
+}
+
+p {
+  font-size: 12px;
+}
+
+.header {
+  background-color: white;
+  width: 80%;
+  height: 100px;
+  margin: 20px auto 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img {
+  height: 80px;
+  margin: 12px;
+}
+.title-wrapper{
+  margin: 18px 15px;
+}
+
+.container-wrapper {
+  background-color: white;
+  width: 80%;
+  height: 607px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.customization {
+  background-color: #3b4851;
+  width: 59%;
+  height: 100%;
+  color: white;
+  padding: 15px;
+  direction: rtl;
+  overflow-x: hidden;
+}
+.preview {
+  width: 63%;
+  height: 100%;
+}
+.picture {
+  background-image: url(../assets/img/lounge1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.picture h1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  font-size: 50px !important;
+  color: white;
+}
+.customer-text {
+  width: 55% !important;
+  height: 35%;
+}
+.fonts-wrapper {
+  background-color: #fff;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px 0 !important;
+}
+.font {
+  text-align: center;
+  cursor: pointer;
+}
+.font-1 {
+  font-family: Barokah;
+}
+.font-2 {
+  font-family: Bettina;
+}
+.font-3 {
+  font-family: Caveat-Regular;
+}
+.font-4 {
+  font-family: fabfeltscript-bold;
+}
+.font-5 {
+  font-family: HighSummit;
+}
+.font-6 {
+  font-family: NexaRustExtras;
+}
+.font-7 {
+  font-family: Nickainley;
+}
+.font-8 {
+  font-family: Somelove;
+}
+.font-9 {
+  font-family: SouthTown;
+}
+.font-10 {
+  font-family: Stalemate;
+}
+.font-11 {
+  font-family: SundayHoliday;
+}
+.font-12 {
+  font-family: BadScript;
+}
+.font-13 {
+  font-family: TheSuavity;
+}
+.font-14 {
+  font-family: Architex;
+}
+.font h5 {
+  border: 1px solid gray;
+  padding: 10px;
+}
+.choose-color-title {
+  margin-top: 20px;
+}
+
+.color {
+  cursor: pointer;
+}
+
+.color-1 {
+  background-color: #8fcfff;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-2 {
+  background-color: #0081fb;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-3 {
+  background-color: #bb234a;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-4 {
+  background-color: #f3f528;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-5 {
+  background-color: #f121b7;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-6 {
+  background-color: #ff0000;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-7 {
+  background-color: #0300f1;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-8 {
+  background-color: #f4d3a8;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-9 {
+  background-color: #fda730;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-10 {
+  background-color: #c700bd;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-11 {
+  background-color: #00d77c;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.color-12 {
+  background-color: #dfdfdf;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100px;
+  flex-direction: row-reverse;
+}
+.colors-wrapper {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  margin: 5px 0 !important;
+  padding: 10px 0 10px 0;
+}
+.d-none {
+  display: none;
+}
+.other-background {
+  /* background-color: black; */
+  /* opacity: 35%; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75%;
+  margin: 0 20px;
+}
+.tumbnail-background-img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px;
+}
