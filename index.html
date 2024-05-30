@@ -1,216 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
-    ">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    "
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="./js/index.js"></script>
     <title>Paandoraa Neon</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <img src="./assets/img/Pandora-logo.png" alt="logo" class="logo-img">
-        <div class="title-wrapper">
-            <h1>پاندورا</h1>
-            <h4>نئون</h4>
-        </div>
+      <img src="./assets/img/Pandora-logo.png" alt="logo" class="logo-img" />
+      <div class="title-wrapper">
+        <h1>پاندورا</h1>
+        <h4>نئون</h4>
+      </div>
     </div>
     <div class="container-wrapper">
-        <div class="preview">
-            <div class="picture" id="picture">
-                <h1 id="primary-text">Your Text</h1>
-                <div class="other-background">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/bar1.jpg)"
-                        src="./assets/img/bar1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/bedroom1.jpg)"
-                        src="./assets/img/bedroom1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/games1.jpg)"
-                        src="./assets/img/games1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/green1.jpg)"
-                        src="./assets/img/green1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/gym1.jpg)"
-                        src="./assets/img/gym1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/lounge1.jpg)"
-                        src="./assets/img/lounge1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/outdoor1.jpg)"
-                        src="./assets/img/outdoor1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/party1.jpg)"
-                        src="./assets/img/party1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/store1.jpg)"
-                        src="./assets/img/store1.jpg" alt="">
-                    <img class="tumbnail-background-img" data-src="url(./assets/img/teenbedroom1.jpg)"
-                        src="./assets/img/teenbedroom1.jpg" alt="">
-                </div>
-            </div>
+      <div class="preview">
+        <div class="picture" id="picture">
+          
+          <h1 id="primary-text">Your Text</h1>
+          <div class="other-background">
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/bar1.jpg)"
+              src="./assets/img/bar1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/bedroom1.jpg)"
+              src="./assets/img/bedroom1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/games1.jpg)"
+              src="./assets/img/games1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/green1.jpg)"
+              src="./assets/img/green1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/gym1.jpg)"
+              src="./assets/img/gym1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/lounge1.jpg)"
+              src="./assets/img/lounge1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/outdoor1.jpg)"
+              src="./assets/img/outdoor1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/party1.jpg)"
+              src="./assets/img/party1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/store1.jpg)"
+              src="./assets/img/store1.jpg"
+              alt=""
+            />
+            <img
+              class="tumbnail-background-img"
+              data-src="url(./assets/img/teenbedroom1.jpg)"
+              src="./assets/img/teenbedroom1.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="customization">
-            <div>
-
-                <h1>1. متن شما</h1>
-                <p>متن مورد نظر خود را وارد کنید (فقط به زبان انگلیسی)</p>
-                <input id="input-text" type="text" placeholder="متن مورد نظر خود را بنویسید"
-                    class="form-control customer-text" oninput="onTextChange()">
-                <br>
-                <h1>2. انتخاب فونت</h1>
-                <p>از بین فونت‌های موجود، فونت مورد نظر خود را انتخاب کنید</p>
-                <button type="button" class="btn btn-primary" onclick="showFonts()">نمایش لیست فونت ها</button>
-                <div id="fonts-wrapper" class="fonts-wrapper row row-cols-4 g-3 d-none">
-                    <div data-font="Barokah" class="font font-1">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Bettina" class="font font-2">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Caveat-Regular" class="font font-3">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="fabfeltscript-bold" class="font font-4">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="HighSummit" class="font font-5">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Sacramento" class="font font-6">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Nickainley" class="font font-7">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Somelove" class="font font-8">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="SouthTown" class="font font-9">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Stalemate" class="font font-10">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="SundayHoliday" class="font font-11">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="BadScript" class="font font-12">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="TheSuavity" class="font font-13">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="Architex" class="font font-14">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="OpenSans" class="font font-14">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-                    <div data-font="JosefinSans" class="font font-14">
-                        <h5>
-                            Sample
-                        </h5>
-                    </div>
-
-                </div>
-                <div class="mb-3 mt-3">
-                    <h1>3. انتخاب عکس</h1>
-                    <p> عکس مورد نظر خود را آپلود کنید </p>
-                    <input class="form-control" type="file" id="fileInput" accept="image/*">
-                </div>
-                <h1 class="choose-color-title">4. انتخاب رنگ</h1>
-                <p>از بین رنگ‌های موجود، رنگ مورد نظر خود را انتخاب کنید</p>
-
-                <div class="colors-wrapper d-flex justify-content-around
-                    ">
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(143, 207, 255) 0px 0px 20px, rgb(143, 207, 255) 0px 0px 30px, rgb(143, 207, 255) 0px 0px 40px, rgb(143, 207, 255) 0px 0px 55px, rgb(143, 207, 255) 0px 0px 65px, rgb(143, 207, 255) 0px 0px 75px, rgb(143, 207, 255) 0px 0px 95px, rgb(143, 207, 255) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-1"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(0, 129, 251) 0px 0px 20px, rgb(0, 129, 251) 0px 0px 30px, rgb(0, 129, 251) 0px 0px 40px, rgb(0, 129, 251) 0px 0px 55px, rgb(0, 129, 251) 0px 0px 65px, rgb(0, 129, 251) 0px 0px 75px, rgb(0, 129, 251) 0px 0px 95px, rgb(0, 129, 251) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-2"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(187, 35, 74) 0px 0px 20px, rgb(187, 35, 74) 0px 0px 30px, rgb(187, 35, 74) 0px 0px 40px, rgb(187, 35, 74) 0px 0px 55px, rgb(187, 35, 74) 0px 0px 65px, rgb(187, 35, 74) 0px 0px 75px, rgb(187, 35, 74) 0px 0px 95px, rgb(187, 35, 74) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-3"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(243, 245, 40) 0px 0px 20px, rgb(243, 245, 40) 0px 0px 30px, rgb(243, 245, 40) 0px 0px 40px, rgb(243, 245, 40) 0px 0px 55px, rgb(243, 245, 40) 0px 0px 65px, rgb(243, 245, 40) 0px 0px 75px, rgb(243, 245, 40) 0px 0px 95px, rgb(243, 245, 40) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-4"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(241, 33, 183) 0px 0px 20px, rgb(241, 33, 183) 0px 0px 30px, rgb(241, 33, 183) 0px 0px 40px, rgb(241, 33, 183) 0px 0px 55px, rgb(241, 33, 183) 0px 0px 65px, rgb(241, 33, 183) 0px 0px 75px, rgb(241, 33, 183) 0px 0px 95px, rgb(241, 33, 183) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-5"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 0, 0) 0px 0px 20px, rgb(255, 0, 0) 0px 0px 30px, rgb(255, 0, 0) 0px 0px 40px, rgb(255, 0, 0) 0px 0px 55px, rgb(255, 0, 0) 0px 0px 65px, rgb(255, 0, 0) 0px 0px 75px, rgb(255, 0, 0) 0px 0px 95px, rgb(255, 0, 0) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-6"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(3, 0, 241) 0px 0px 20px, rgb(3, 0, 241) 0px 0px 30px, rgb(3, 0, 241) 0px 0px 40px, rgb(3, 0, 241) 0px 0px 55px, rgb(3, 0, 241) 0px 0px 65px, rgb(3, 0, 241) 0px 0px 75px, rgb(3, 0, 241) 0px 0px 95px, rgb(3, 0, 241) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-7"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(244, 211, 168) 0px 0px 20px, rgb(244, 211, 168) 0px 0px 30px, rgb(244, 211, 168) 0px 0px 40px, rgb(244, 211, 168) 0px 0px 55px, rgb(244, 211, 168) 0px 0px 65px, rgb(244, 211, 168) 0px 0px 75px, rgb(244, 211, 168) 0px 0px 95px, rgb(244, 211, 168) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-8"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(253, 167, 48) 0px 0px 20px, rgb(253, 167, 48) 0px 0px 30px, rgb(253, 167, 48) 0px 0px 40px, rgb(253, 167, 48) 0px 0px 55px, rgb(253, 167, 48) 0px 0px 65px, rgb(253, 167, 48) 0px 0px 75px, rgb(253, 167, 48) 0px 0px 95px, rgb(253, 167, 48) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-9"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(199, 0, 189) 0px 0px 20px, rgb(199, 0, 189) 0px 0px 30px, rgb(199, 0, 189) 0px 0px 40px, rgb(199, 0, 189) 0px 0px 55px, rgb(199, 0, 189) 0px 0px 65px, rgb(199, 0, 189) 0px 0px 75px, rgb(199, 0, 189) 0px 0px 95px, rgb(199, 0, 189) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-10"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(0, 215, 124) 0px 0px 20px, rgb(0, 215, 124) 0px 0px 30px, rgb(0, 215, 124) 0px 0px 40px, rgb(0, 215, 124) 0px 0px 55px, rgb(0, 215, 124) 0px 0px 65px, rgb(0, 215, 124) 0px 0px 75px, rgb(0, 215, 124) 0px 0px 95px, rgb(0, 215, 124) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-11"></div>
-                    </div>
-                    <div data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(225, 227, 230) 0px 0px 20px, rgb(225, 227, 230) 0px 0px 30px, rgb(225, 227, 230) 0px 0px 40px, rgb(225, 227, 230) 0px 0px 55px, rgb(225, 227, 230) 0px 0px 65px, rgb(225, 227, 230) 0px 0px 75px, rgb(225, 227, 230) 0px 0px 95px, rgb(225, 227, 230) 0px 0px 120px"
-                        class="color d-flex">
-                        <div class="color-12"></div>
-                    </div>
-
-
-
-                </div>
-
+      </div>
+      <div class="customization">
+        <div>
+          <h1>1. متن شما</h1>
+          <p>متن مورد نظر خود را وارد کنید (فقط به زبان انگلیسی)</p>
+          <input
+            id="input-text"
+            type="text"
+            placeholder="متن مورد نظر خود را بنویسید"
+            class="form-control customer-text"
+            oninput="onTextChange()"
+          />
+          <br />
+          <h1>2. انتخاب فونت</h1>
+          <p>از بین فونت‌های موجود، فونت مورد نظر خود را انتخاب کنید</p>
+          <button type="button" class="btn btn-primary" onclick="showFonts()">
+            نمایش لیست فونت ها
+          </button>
+          <div
+            id="fonts-wrapper"
+            class="fonts-wrapper row row-cols-4 g-3 d-none"
+          >
+            <div data-font="Barokah" class="font font-1">
+              <h5>Sample</h5>
             </div>
+            <div data-font="Bettina" class="font font-2">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Caveat-Regular" class="font font-3">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="fabfeltscript-bold" class="font font-4">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="HighSummit" class="font font-5">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Sacramento" class="font font-6">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Nickainley" class="font font-7">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Somelove" class="font font-8">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="SouthTown" class="font font-9">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Stalemate" class="font font-10">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="SundayHoliday" class="font font-11">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="BadScript" class="font font-12">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="TheSuavity" class="font font-13">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="Architex" class="font font-14">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="OpenSans" class="font font-15">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="JosefinSans" class="font font-16">
+              <h5>Sample</h5>
+            </div>
+            <div data-font="nazanin" class="font font-17">
+              <h5>نمونه</h5>
+            </div>
+            <div data-font="titr" class="font font-18">
+              <h5>نمونه</h5>
+            </div>
+            <div data-font="koodak" class="font font-19">
+              <h5>نمونه</h5>
+            </div>
+            <div data-font="kamran" class="font font-20">
+              <h5>نمونه</h5>
+            </div>
+            <div data-font="dastnevis" class="font font-21">
+              <h5>نمونه</h5>
+            </div>
+          </div>
+          <div class="mb-3 mt-3">
+            <h1>3. انتخاب عکس</h1>
+            <p>عکس مورد نظر خود را آپلود کنید</p>
+            <input
+              class="form-control"
+              type="file"
+              id="fileInput"
+              accept="image/*"
+            />
+          </div>
+          <h1 class="choose-color-title">4. انتخاب رنگ</h1>
+          <p>از بین رنگ‌های موجود، رنگ مورد نظر خود را انتخاب کنید</p>
+
+          <div class="colors-wrapper d-flex justify-content-center gap-2">
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(143, 207, 255) 0px 0px 20px, rgb(143, 207, 255) 0px 0px 30px, rgb(143, 207, 255) 0px 0px 40px, rgb(143, 207, 255) 0px 0px 55px, rgb(143, 207, 255) 0px 0px 65px, rgb(143, 207, 255) 0px 0px 75px, rgb(143, 207, 255) 0px 0px 95px, rgb(143, 207, 255) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-1"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(0, 129, 251) 0px 0px 20px, rgb(0, 129, 251) 0px 0px 30px, rgb(0, 129, 251) 0px 0px 40px, rgb(0, 129, 251) 0px 0px 55px, rgb(0, 129, 251) 0px 0px 65px, rgb(0, 129, 251) 0px 0px 75px, rgb(0, 129, 251) 0px 0px 95px, rgb(0, 129, 251) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-2"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(187, 35, 74) 0px 0px 20px, rgb(187, 35, 74) 0px 0px 30px, rgb(187, 35, 74) 0px 0px 40px, rgb(187, 35, 74) 0px 0px 55px, rgb(187, 35, 74) 0px 0px 65px, rgb(187, 35, 74) 0px 0px 75px, rgb(187, 35, 74) 0px 0px 95px, rgb(187, 35, 74) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-3"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(243, 245, 40) 0px 0px 20px, rgb(243, 245, 40) 0px 0px 30px, rgb(243, 245, 40) 0px 0px 40px, rgb(243, 245, 40) 0px 0px 55px, rgb(243, 245, 40) 0px 0px 65px, rgb(243, 245, 40) 0px 0px 75px, rgb(243, 245, 40) 0px 0px 95px, rgb(243, 245, 40) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-4"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(241, 33, 183) 0px 0px 20px, rgb(241, 33, 183) 0px 0px 30px, rgb(241, 33, 183) 0px 0px 40px, rgb(241, 33, 183) 0px 0px 55px, rgb(241, 33, 183) 0px 0px 65px, rgb(241, 33, 183) 0px 0px 75px, rgb(241, 33, 183) 0px 0px 95px, rgb(241, 33, 183) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-5"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 0, 0) 0px 0px 20px, rgb(255, 0, 0) 0px 0px 30px, rgb(255, 0, 0) 0px 0px 40px, rgb(255, 0, 0) 0px 0px 55px, rgb(255, 0, 0) 0px 0px 65px, rgb(255, 0, 0) 0px 0px 75px, rgb(255, 0, 0) 0px 0px 95px, rgb(255, 0, 0) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-6"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(3, 0, 241) 0px 0px 20px, rgb(3, 0, 241) 0px 0px 30px, rgb(3, 0, 241) 0px 0px 40px, rgb(3, 0, 241) 0px 0px 55px, rgb(3, 0, 241) 0px 0px 65px, rgb(3, 0, 241) 0px 0px 75px, rgb(3, 0, 241) 0px 0px 95px, rgb(3, 0, 241) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-7"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(244, 211, 168) 0px 0px 20px, rgb(244, 211, 168) 0px 0px 30px, rgb(244, 211, 168) 0px 0px 40px, rgb(244, 211, 168) 0px 0px 55px, rgb(244, 211, 168) 0px 0px 65px, rgb(244, 211, 168) 0px 0px 75px, rgb(244, 211, 168) 0px 0px 95px, rgb(244, 211, 168) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-8"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(253, 167, 48) 0px 0px 20px, rgb(253, 167, 48) 0px 0px 30px, rgb(253, 167, 48) 0px 0px 40px, rgb(253, 167, 48) 0px 0px 55px, rgb(253, 167, 48) 0px 0px 65px, rgb(253, 167, 48) 0px 0px 75px, rgb(253, 167, 48) 0px 0px 95px, rgb(253, 167, 48) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-9"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(199, 0, 189) 0px 0px 20px, rgb(199, 0, 189) 0px 0px 30px, rgb(199, 0, 189) 0px 0px 40px, rgb(199, 0, 189) 0px 0px 55px, rgb(199, 0, 189) 0px 0px 65px, rgb(199, 0, 189) 0px 0px 75px, rgb(199, 0, 189) 0px 0px 95px, rgb(199, 0, 189) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-10"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(0, 215, 124) 0px 0px 20px, rgb(0, 215, 124) 0px 0px 30px, rgb(0, 215, 124) 0px 0px 40px, rgb(0, 215, 124) 0px 0px 55px, rgb(0, 215, 124) 0px 0px 65px, rgb(0, 215, 124) 0px 0px 75px, rgb(0, 215, 124) 0px 0px 95px, rgb(0, 215, 124) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-11"></div>
+            </div>
+            <div
+              data-textShadow="rgb(255, 255, 255) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(225, 227, 230) 0px 0px 20px, rgb(225, 227, 230) 0px 0px 30px, rgb(225, 227, 230) 0px 0px 40px, rgb(225, 227, 230) 0px 0px 55px, rgb(225, 227, 230) 0px 0px 65px, rgb(225, 227, 230) 0px 0px 75px, rgb(225, 227, 230) 0px 0px 95px, rgb(225, 227, 230) 0px 0px 120px"
+              class="color d-flex"
+            >
+              <div class="color-12"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
-</body>
-
-
+  </body>
 </html>

@@ -77,6 +77,27 @@
   font-family: JosefinSans;
   src: url(../assets/fonts/JosefinSans-Regular.ttf);
 }
+@font-face {
+  font-family: kamran;
+  src: url(../assets/fonts/Far_KamranO.ttf);
+}
+@font-face {
+  font-family: nazanin;
+  src: url(../assets/fonts/Far_NazaninOut.ttf);
+}
+@font-face {
+  font-family: koodak;
+  src: url(../assets/fonts/Far_KoodakO.ttf);
+}
+
+@font-face {
+  font-family: dastnevis;
+  src: url(../assets/fonts/danstevis.otf);
+}
+@font-face {
+  font-family: titr;
+  src: url(../assets/fonts/Mj_Titr\ Outline_0.ttf);
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -126,7 +147,7 @@ p {
   height: 80px;
   margin: 12px;
 }
-.title-wrapper{
+.title-wrapper {
   margin: 18px 15px;
 }
 
@@ -142,7 +163,7 @@ p {
 }
 .customization {
   background-color: #3b4851;
-  width: 59%;
+  width: 40%;
   height: 100%;
   color: white;
   padding: 15px;
@@ -150,7 +171,7 @@ p {
   overflow-x: hidden;
 }
 .preview {
-  width: 63%;
+  width: 60%;
   height: 100%;
 }
 .picture {
@@ -161,6 +182,23 @@ p {
   position: relative;
   text-align: center;
 }
+.move-area {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  cursor: move;
+  position: absolute;
+}
+
+/* .move-area h1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  font-size: 50px !important;
+  color: white;
+  cursor: move;
+} */
 .picture h1 {
   position: absolute;
   top: 20%;
@@ -225,6 +263,27 @@ p {
 }
 .font-14 {
   font-family: Architex;
+}
+.font-15 {
+  font-family: OpenSans;
+}
+.font-16 {
+  font-family: JosefinSans;
+}
+.font-17 {
+  font-family: nazanin;
+}
+.font-18 {
+  font-family: titr;
+}
+.font-19 {
+  font-family: koodak;
+}
+.font-20 {
+  font-family: kamran;
+}
+.font-21 {
+  font-family: dastnevis;
 }
 .font h5 {
   border: 1px solid gray;
@@ -328,6 +387,7 @@ p {
   border-radius: 10px;
   margin: 5px 0 !important;
   padding: 10px 0 10px 0;
+  flex-wrap: wrap;
 }
 .d-none {
   display: none;
@@ -338,8 +398,7 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  top: 75%;
-  margin: 0 20px;
+  bottom: 20px;
 }
 .tumbnail-background-img {
   width: 80px;
@@ -347,4 +406,31 @@ p {
   cursor: pointer;
   border-radius: 10px;
   margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .container-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  .customization,
+  .preview {
+    width: 100%;
+  }
+
+  .container-wrapper,
+  .header {
+    width: 90%;
+  }
+
+  #input-text {
+    width: 100% !important;
+  }
+
+  .picture {
+    height: 400px;
+  }
+  .tumbnail-background-img {
+    width: 55px;
+  }
 }
