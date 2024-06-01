@@ -55,8 +55,13 @@
         <p>متن مورد نظر خود را وارد کنید (فقط به زبان انگلیسی)</p>
         <input id="input-text" type="text" placeholder="متن مورد نظر خود را بنویسید" class="form-control customer-text"
           oninput="onTextChange()" />
+          <br>
+          <h1>2. سایز متن </h1>
+          <p>متن خود را به اندازه دلخواه تغییر بدهید</p>
+
+          <input type="range" class="form-range change-font-size" min="50" max="100" id="customRange2" value="50" onchange="onFontSizeChange()">
         <br />
-        <h1>2. انتخاب فونت</h1>
+        <h1>3. انتخاب فونت</h1>
         <p>از بین فونت‌های موجود، فونت مورد نظر خود را انتخاب کنید</p>
         <button type="button" class="btn btn-primary" onclick="showFonts()">
           نمایش لیست فونت ها
@@ -249,11 +254,11 @@
             <h5>نمونه</h5>
           </div>
         </div>
-        <h1 class="choose-background">3. انتخاب عکس پس‌زمینه (اختیاری)</h1>
+        <h1 class="choose-background">4. پس زمینه دلخواه (اختیاری)</h1>
         <p>عکس مورد نظر خود را برای پس‌زمینه آپلود کنید</p>
         <input class="form-control" type="file" id="fileInput" accept="image/*" />
 
-        <h1 class="choose-color-title">4. انتخاب رنگ</h1>
+        <h1 class="choose-color-title">5. انتخاب رنگ</h1>
         <p>از بین رنگ‌های موجود، رنگ مورد نظر خود را انتخاب کنید</p>
 
         <div class="colors-wrapper d-flex justify-content-center gap-2">
