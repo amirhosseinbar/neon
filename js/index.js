@@ -3,7 +3,9 @@ const backgroundPreview = document.getElementById('picture');
 const colorsEl = document.querySelectorAll('.color');
 const fontsEl = document.querySelectorAll('.font');
 const backgroundEl = document.querySelectorAll('.tumbnail-background-img');
-const draggable = document.getElementById('draggable');
+const draggable = document.querySelector('.draggable');
+var draggableWidth = backgroundPreview.getBoundingClientRect().width
+var draggableHeight = backgroundPreview.getBoundingClientRect().height
 
 
 Array.from(colorsEl).forEach(item=>{
@@ -48,15 +50,40 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         alert('لطفاً یک فایل تصویری انتخاب کنید.');
     }
 });
+
+
+
+
+
 draggable.addEventListener('mousedown', function(e) {
     // گرفتن موقعیت اولیه ماوس
-    let shiftX = e.clientX - draggable.getBoundingClientRect().left;
-    let shiftY = e.clientY - draggable.getBoundingClientRect().top;
+    let shiftX = e.clientX - draggable.offsetLeft;
+    let shiftY = e.clientY - draggable.offsetTop;
 
     // تابعی برای حرکت دادن المان
+    // function moveAt(pageX, pageY) {
+    //     draggable.style.left = pageX - shiftX + 'px';
+    //     draggable.style.top = pageY - shiftY + 'px';
+    // }
     function moveAt(pageX, pageY) {
-        draggable.style.left = pageX - shiftX + 'px';
-        draggable.style.top = pageY - shiftY + 'px';
+        let newLeft = pageX - shiftX;
+        let newTop = pageY - shiftY;
+
+        // اعمال محدودیت‌های حرکت افقی
+        if (newLeft >= draggableWidth- draggable.getBoundingClientRect().width) {
+            newLeft = draggableWidth - draggable.getBoundingClientRect().width;
+        } else if (newLeft <= 0) {
+            newLeft = 0;
+        }
+
+        if (newTop >= draggableHeight - draggable.getBoundingClientRect().height - 200) {
+            newTop = draggableHeight - draggable.getBoundingClientRect().height - 200;
+        } else if (newTop < 0) {
+            newTop = 0;
+        }
+
+        draggable.style.left = newLeft + 'px';
+        draggable.style.top = newTop + 'px';
     }
 
     // حرکت دادن المان به موقعیت اولیه ماوس
@@ -71,7 +98,7 @@ draggable.addEventListener('mousedown', function(e) {
     document.addEventListener('mousemove', onMouseMove);
 
     // حذف گوش دادن به رویداد حرکت ماوس زمانی که ماوس را رها می‌کنیم
-    draggable.addEventListener('mouseup', function() {
+    document.addEventListener('mouseup', function() {
         document.removeEventListener('mousemove', onMouseMove);
     });
 

@@ -99,6 +99,173 @@
   src: url(../assets/fonts/Mj_Titr\ Outline_0.ttf);
 }
 
+/* fonthaye site khareji */
+@font-face {
+  font-family: "Alexa";
+  src: url("../assets/fonts/Alexa.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amanda";
+  src: url("../assets/fonts/Amanda.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Amsterdam";
+  src: url("../assets/fonts/Amsterdam.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Austin";
+  src: url("../assets/fonts/Austin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avante";
+  src: url("../assets/fonts/Avante.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barcelona";
+  src: url("../assets/fonts/Barcelona.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bayview";
+  src: url("../assets/fonts/Bayview.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Beachfront";
+  src: url("../assets/fonts/Beachfront.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bellview";
+  src: url("../assets/fonts/Bellview.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Buttercup";
+  src: url("../assets/fonts/Buttercup.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Chelsea";
+  src: url("../assets/fonts/Chelsea.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ClassicType";
+  src: url("../assets/fonts/ClassicType.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Freehand";
+  src: url("../assets/fonts/Freehand.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Freespirit";
+  src: url("../assets/fonts/Freespirit.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Greenworld";
+  src: url("../assets/fonts/Greenworld.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LoveNeon";
+  src: url("../assets/fonts/LoveNeon.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LoveNote";
+  src: url("../assets/fonts/LoveNote.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Marquee";
+  src: url("../assets/fonts/Marquee.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mayfair";
+  src: url("../assets/fonts/Mayfair.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Melbourne";
+  src: url("../assets/fonts/Melbourne.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Monaco";
+  src: url("../assets/fonts/Monaco.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeonGlow";
+  src: url("../assets/fonts/NeonGlow.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeonLite";
+  src: url("../assets/fonts/NeonLite.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Neonscript";
+  src: url("../assets/fonts/Neonscript.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Neontrace";
+  src: url("../assets/fonts/Neontrace.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeoTokyo";
+  src: url("../assets/fonts/NeoTokyo.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nevada";
+  src: url("../assets/fonts/Nevada.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NewCursive";
+  src: url("../assets/fonts/NewCursive.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Northshore";
+  src: url("../assets/fonts/Northshore.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Photogenic";
+  src: url("../assets/fonts/Photogenic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rocket";
+  src: url("../assets/fonts/Rocket.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Royalty";
+  src: url("../assets/fonts/Royalty.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SciFi";
+  src: url("../assets/fonts/SciFi.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Signature";
+  src: url("../assets/fonts/Signature.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sorrento";
+  src: url("../assets/fonts/Sorrento.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Typewriter";
+  src: url("../assets/fonts/Typewriter.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Venetian";
+  src: url("../assets/fonts/Venetian.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Vintage";
+  src: url("../assets/fonts/Vintage.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Waikiki";
+  src: url("../assets/fonts/Waikiki.ttf") format("truetype");
+}
+@font-face {
+  font-family: "WildScript";
+  src: url("../assets/fonts/WildScript.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Loveisland";
+  src: url("../assets/fonts/Loveisland.ttf") format("truetype");
+}
+/* fonthaye site khareji */
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -126,7 +293,7 @@ body {
 }
 h1 {
   font-family: anjoman-bold;
-  font-size: 20px !important;
+  font-size: 20px ;
 }
 
 p {
@@ -170,6 +337,14 @@ p {
   direction: rtl;
   overflow-x: hidden;
 }
+
+.form h1{
+  font-size: 20px;
+}
+.choose-background{
+  margin-top: 20px;
+}
+
 .preview {
   width: 60%;
   height: 100%;
@@ -190,22 +365,14 @@ p {
   position: absolute;
 }
 
-/* .move-area h1 {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  font-size: 50px !important;
-  color: white;
-  cursor: move;
-} */
 .picture h1 {
   position: absolute;
+  cursor: move;
   top: 20%;
-  left: 0;
-  right: 0;
-  font-size: 50px !important;
+  left: 40%;
+  font-size: 50px;
   color: white;
+  user-select: none;
 }
 .customer-text {
   width: 55% !important;
@@ -271,18 +438,141 @@ p {
   font-family: JosefinSans;
 }
 .font-17 {
-  font-family: nazanin;
+  font-family: Alexa;
 }
 .font-18 {
-  font-family: titr;
+  font-family: Amanda;
 }
 .font-19 {
-  font-family: koodak;
+  font-family: Amsterdam;
 }
 .font-20 {
-  font-family: kamran;
+  font-family: Austin;
 }
 .font-21 {
+  font-family: Avante;
+}
+.font-22 {
+  font-family: Barcelona;
+}
+.font-23 {
+  font-family: Bayview;
+}
+.font-24 {
+  font-family: Beachfront;
+}
+.font-25 {
+  font-family: Bellview;
+}
+.font-26 {
+  font-family: Buttercup;
+}
+.font-27 {
+  font-family: Chelsea;
+}
+.font-28 {
+  font-family: ClassicType;
+}
+.font-29 {
+  font-family: Freehand;
+}
+.font-30 {
+  font-family: Freespirit;
+}
+.font-31 {
+  font-family: Greenworld;
+}
+.font-32 {
+  font-family: LoveNeon;
+}
+.font-33 {
+  font-family: LoveNote;
+}
+.font-34 {
+  font-family: Marquee;
+}
+.font-35 {
+  font-family: Mayfair;
+}
+.font-36 {
+  font-family: Melbourne;
+}
+.font-37 {
+  font-family: Monaco;
+}
+.font-38 {
+  font-family: NeonGlow;
+}
+.font-39 {
+  font-family: NeonLite;
+}
+.font-40 {
+  font-family: Neonscript;
+}
+.font-41 {
+  font-family: Neontrace;
+}
+.font-42 {
+  font-family: NeoTokyo;
+}
+.font-43 {
+  font-family: Nevada;
+}
+.font-44 {
+  font-family: NewCursive;
+}
+.font-45 {
+  font-family: Northshore;
+}
+.font-46 {
+  font-family: Photogenic;
+}
+.font-47 {
+  font-family: Rocket;
+}
+.font-48 {
+  font-family: Royalty;
+}
+.font-49 {
+  font-family: SciFi;
+}
+.font-50 {
+  font-family: Signature;
+}
+.font-51 {
+  font-family: Sorrento;
+}
+.font-52 {
+  font-family: Typewriter;
+}
+.font-53 {
+  font-family: Venetian;
+}
+.font-54 {
+  font-family: Vintage;
+}
+.font-55 {
+  font-family: Waikiki;
+}
+.font-56 {
+  font-family: WildScript;
+}
+.font-57 {
+  font-family: Loveisland;
+}
+.font-58 {
+  font-family: nazanin;
+}
+.font-59 {
+  font-family: titr;
+}
+.font-60 {
+  font-family: koodak;
+}
+.font-61 {
+  font-family: kamran;
+}
+.font-62 {
   font-family: dastnevis;
 }
 .font h5 {
@@ -429,8 +719,13 @@ p {
 
   .picture {
     height: 400px;
+    text-align: center;
   }
   .tumbnail-background-img {
     width: 55px;
+  }
+  .picture h1 {
+    font-size: 30px;
+    left: 30%;
   }
 }
